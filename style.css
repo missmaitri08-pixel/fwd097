@@ -1,0 +1,239 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0f2c59; /* SAU Deep Blue */
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-box {
+    background-color: #c59b27; /* Accent Gold */
+    color: #0f2c59;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.site-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.site-subtitle {
+    font-size: 12px;
+    color: #d0d7de;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    font-size: 16px;
+    color: #e2e8f0;
+}
+
+/* Section Styling */
+.section {
+    padding: 50px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gray-bg {
+    background-color: #eef2f6;
+    max-width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    color: #0f2c59;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #c59b27;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Grid & Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    color: #0f2c59;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: bold;
+    color: #c59b27;
+    margin-bottom: 10px;
+}
+
+/* Amenities */
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.amenity-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+}
+
+/* Form Styling */
+.booking-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0f2c59;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #c59b27;
+    color: #0f2c59;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #0f2c59;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #0f2c59;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #a0aec0;
+}
