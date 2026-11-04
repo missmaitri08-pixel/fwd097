@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guest House Booking - South Asian University</title>
+    <title>Campus Guest House | South Asian University</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Top Institutional Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span>📍 Maidan Garhi, New Delhi - 110068</span>
+            <span>✉️ guesthouse@sau.int | ☎️ +91 11 2086 2597</span>
+        </div>
+    </div>
 
     <!-- Header / Navbar -->
     <header class="navbar">
@@ -14,140 +22,192 @@
             <div class="logo-box">SAU</div>
             <div>
                 <h1 class="site-title">South Asian University</h1>
-                <p class="site-subtitle">Campus Guest House Accommodation</p>
+                <p class="site-subtitle">Campus Guest House & Accommodation Portal</p>
             </div>
         </div>
         <nav class="nav-links">
             <a href="#home">Home</a>
-            <a href="#rooms">Rooms</a>
-            <a href="#amenities">Amenities</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
+            <a href="#rooms">Rooms & Tariffs</a>
+            <a href="services.html">Services</a>
+            <a href="rules.html">Rules & Regulations</a>
+            <a href="#booking" class="nav-btn">Book Now</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <h2>Welcome to SAU Campus Guest House</h2>
-        <p>Comfortable, affordable, and serene accommodation for university guests, visitors, faculty, and official delegates at Maidan Garhi Campus, New Delhi.</p>
-        <a href="#booking" class="btn">Request Booking</a>
+        <div class="hero-content">
+            <h2>Welcome to SAU Campus Guest House</h2>
+            <p>Providing comfortable, serene, and secure accommodation for official university delegates, visiting faculty, examiners, academic guests, and student families.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">Request Accommodation</a>
+                <a href="#rooms" class="btn btn-secondary">Explore Rooms</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Room Categories -->
+    <!-- Room Categories Section -->
     <section id="rooms" class="section">
-        <h2 class="section-title">Room Options</h2>
+        <div class="section-header">
+            <h2 class="section-title">Accommodation Options</h2>
+            <p class="section-desc">Choose from our well-maintained, air-conditioned rooms tailored for your comfort.</p>
+        </div>
+        
         <div class="card-grid">
-            
             <div class="card">
-                <img src="https://images.com" alt="Standard Single Room">
+                <div class="card-img-wrapper">
+                    <span class="badge">Standard</span>
+                    <img src="" alt="Standard Single Room">
+                </div>
                 <div class="card-body">
                     <h3>Standard Single Room</h3>
-                    <p class="price">₹1,500 / night</p>
-                    <p>Single bed with attached bathroom, study desk, AC, and high-speed Wi-Fi access.</p>
+                    <p class="price">₹1,500 <span class="per-night">/ night</span></p>
+                    <p>Ideal for individual researchers and visiting faculty. Includes single bed, attached modern bathroom, study desk, AC, and high-speed Wi-Fi.</p>
                 </div>
             </div>
 
             <div class="card">
-                <img src="https://images.com" alt="Deluxe Double Room">
+                <div class="card-img-wrapper">
+                    <span class="badge popular">Popular</span>
+                    <img src="" alt="Deluxe Double Room">
+                </div>
                 <div class="card-body">
                     <h3>Deluxe Double Room</h3>
-                    <p class="price">₹2,500 / night</p>
-                    <p>Spacious double room equipped with modern amenities, tea/coffee maker, and TV.</p>
+                    <p class="price">₹2,500 <span class="per-night">/ night</span></p>
+                    <p>Spacious double occupancy room equipped with twin beds, cozy seating area, television, AC, and complimentary breakfast service.</p>
                 </div>
             </div>
 
             <div class="card">
-                <img src="https://images.com" alt="Executive VIP Suite">
+                <div class="card-img-wrapper">
+                    <span class="badge vip">VIP Suite</span>
+                    <img src="" alt="Executive VIP Suite">
+                </div>
                 <div class="card-body">
                     <h3>Executive VIP Suite</h3>
-                    <p class="price">₹4,000 / night</p>
-                    <p>Premium suite featuring a separate sitting room, mini fridge, and balcony view.</p>
+                    <p class="price">₹4,000 <span class="per-night">/ night</span></p>
+                    <p>Premium suite featuring a master bedroom, separate private lounge/living room, mini-fridge, executive workspace, and priority hospitality.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
     <!-- Amenities Section -->
     <section id="amenities" class="section gray-bg">
-        <h2 class="section-title">Campus Facilities & Amenities</h2>
+        <div class="section-header">
+            <h2 class="section-title">Campus Facilities & Amenities</h2>
+            <p class="section-desc">All guests enjoy full access to essential campus conveniences during their stay.</p>
+        </div>
+
         <div class="amenities-grid">
-            <div class="amenity-item">✔ 24/7 High-Speed Wi-Fi</div>
-            <div class="amenity-item">✔ Air Conditioned Rooms</div>
-            <div class="amenity-item">✔ In-house Dining / Mess</div>
-            <div class="amenity-item">✔ 24-Hour Security & CCTV</div>
-            <div class="amenity-item">✔ Daily Housekeeping</div>
-            <div class="amenity-item">✔ Campus Parking Space</div>
+            <div class="amenity-item">
+                <span class="amenity-icon">📶</span>
+                <div>
+                    <h4>High-Speed Wi-Fi</h4>
+                    <p>Complimentary seamless connectivity across all rooms.</p>
+                </div>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">❄️</span>
+                <div>
+                    <h4>Climate Control</h4>
+                    <p>Fully air-conditioned rooms with temperature regulation.</p>
+                </div>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">🍽️</span>
+                <div>
+                    <h4>In-house Dining</h4>
+                    <p>Access to wholesome meals at the campus mess and dining hall.</p>
+                </div>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">🛡️</span>
+                <div>
+                    <h4>24/7 Security</h4>
+                    <p>Gated campus security with round-the-clock CCTV surveillance.</p>
+                </div>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">🧹</span>
+                <div>
+                    <h4>Daily Housekeeping</h4>
+                    <p>Professional room cleaning and fresh linen service daily.</p>
+                </div>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">🅿️</span>
+                <div>
+                    <h4>Visitor Parking</h4>
+                    <p>Dedicated secure vehicle parking space for guests.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="section">
-        <h2 class="section-title">SAU Campus Gallery</h2>
-        <div class="gallery-grid">
-            <img src="https://images.com" alt="Campus Building">
-            <img src="https://images.com" alt="University Library">
-            <img src="https://images.com" alt="Campus Grounds">
-            <img src="https://images.com" alt="Conference Room">
+    <!-- FAQ / Guidelines Section -->
+    <section id="faq" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Booking Guidelines & FAQs</h2>
+            <p class="section-desc">Important information regarding check-in policies and guest eligibility.</p>
+        </div>
+
+        <div class="faq-container">
+            <details class="faq-item">
+                <summary>Who is eligible to book accommodation at the SAU Guest House?</summary>
+                <p>Official university guests, keynote speakers, conference delegates, external academic examiners, and parents/guardians of enrolled students are eligible, subject to prior approval and room availability.</p>
+            </details>
+            <details class="faq-item">
+                <summary>What are the standard check-in and check-out timings?</summary>
+                <p>Standard check-in time is 12:00 PM (Noon) and check-out time is 11:00 AM. Early check-ins or late extensions must be coordinated directly with the Guest House desk.</p>
+            </details>
+            <details class="faq-item">
+                <summary>How is the payment processed for confirmed bookings?</summary>
+                <p>Once your booking enquiry is reviewed and approved by the administration, an online payment link or bank transfer detail will be shared via email to finalize your reservation.</p>
+            </details>
         </div>
     </section>
 
     <!-- Booking Form Section -->
     <section id="booking" class="section gray-bg">
-        <h2 class="section-title">Booking Enquiry Form</h2>
-        <form class="booking-form" action="#" method="post">
+        <div class="section-header">
+            <h2 class="section-title">Online Booking Enquiry</h2>
+            <p class="section-desc">Submit your details below to request a room reservation.</p>
+        </div>
+
+        <form class="booking-form" action="#success-modal" method="get">
             <div class="form-group">
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
             </div>
 
             <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
             </div>
 
             <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
             </div>
 
             <div class="form-group">
-                <label for="roomtype">Room Type</label>
-                <select id="roomtype" name="roomtype">
-                    <option value="single">Standard Single Room</option>
-                    <option value="deluxe">Deluxe Double Room</option>
-                    <option value="suite">Executive VIP Suite</option>
+                <label for="roomtype">Select Room Type *</label>
+                <select id="roomtype" name="roomtype" required>
+                    <option value="single">Standard Single Room (₹1,500/night)</option>
+                    <option value="deluxe" selected>Deluxe Double Room (₹2,500/night)</option>
+                    <option value="suite">Executive VIP Suite (₹4,000/night)</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="checkin">Check-in Date</label>
+                <label for="checkin">Check-in Date *</label>
                 <input type="date" id="checkin" name="checkin" required>
             </div>
 
             <div class="form-group">
-                <label for="checkout">Check-out Date</label>
+                <label for="checkout">Check-out Date *</label>
                 <input type="date" id="checkout" name="checkout" required>
             </div>
 
-            <div class="form-group full-width">
-                <label for="purpose">Purpose of Visit</label>
-                <textarea id="purpose" name="purpose" rows="3" placeholder="e.g., Official University Visit, Conference, Guest Faculty"></textarea>
-            </div>
-
-            <div class="form-group full-width">
-                <button type="submit" class="btn btn-submit">Submit Booking Request</button>
-            </div>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <p><strong>South Asian University</strong></p>
-        <p>Rajpur Road, Maidan Garhi, New Delhi - 110068, India</p>
-        <p>Email: guesthouse@sau.int | Phone: +91 11 2086 2597</p>
-        <p class="copyright">&copy; South Asian University. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+            <div class="form-group
