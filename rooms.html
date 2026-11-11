@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Tariffs | Campus Guest House - South Asian University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Institutional Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span>📍 Maidan Garhi, New Delhi - 110068</span>
+            <span>✉️ guesthouse@sau.int | ☎️ +91 (11) 35656823</span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-box">SAU</div>
+            <div>
+                <h1 class="site-title">South Asian University</h1>
+                <p class="site-subtitle">Campus Guest House & Accommodation Portal</p>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">About Us</a>
+            <a href="rooms.html" class="active">Rooms & Tariffs</a>
+            <a href="services.html">Services</a>
+            <a href="rules.html">Rules & Regulations</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="booking.html" class="nav-btn">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="hero" style="padding: 60px 20px; text-align: center;">
+        <div class="hero-content">
+            <h2>Accommodation Options & Room Tariffs</h2>
+            <p>Explore our room categories, pricing structures, and special reservation guidelines.</p>
+        </div>
+    </section>
+
+    <!-- Room Categories Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Our Accommodation Categories</h2>
+            <p class="section-desc">Room rates do not include meals. Breakfast, lunch, and dinner may be availed separately at the cafeteria.</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <span class="badge">Standard</span>
+                </div>
+                <div class="card-body">
+                    <h3>Standard Room</h3>
+                    <p class="price">₹1,000 – ₹2,000 <span class="per-night">/ day</span></p>
+                    <p>Single & Double occupancy rates vary by category (University Guests, Staff Family, Parents, External Students, Private Guests, Drivers).</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <span class="badge vip">VIP Suite</span>
+                </div>
+                <div class="card-body">
+                    <h3>VIP Suite</h3>
+                    <p class="price">₹2,000 – ₹4,000 <span class="per-night">/ day</span></p>
+                    <p>Premium accommodation available for University Guests/Invitees and Faculty/Staff Guests & Family Members.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <span class="badge popular">Other Areas</span>
+                </div>
+                <div class="card-body">
+                    <h3>Halls & Meeting Rooms</h3>
+                    <p class="price">₹500 – ₹1,000 <span class="per-night">/ day</span></p>
+                    <p>Exclusive facility reservations for SAU Faculty and Staff (Banquet Hall, Party Hall, and Meeting Rooms).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Tariff Calculator Widget -->
+        <div class="calculator-box" style="background: #f8f9fa; border: 1px solid #cce5ff; padding: 25px; border-radius: 8px; margin-top: 40px;">
+            <h3 style="margin-bottom: 15px; color: #1a365d;">💡 Quick Tariff Estimator</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; align-items: center;">
+                <div>
+                    <label for="calc-room-type">Room Type:</label>
+                    <select id="calc-room-type" style="width: 100%; padding: 8px; margin-top: 5px;">
+                        <option value="standard">Standard Room</option>
+                        <option value="vip">VIP Suite</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="calc-category">Guest Category:</label>
+                    <select id="calc-category" style="width: 100%; padding: 8px; margin-top: 5px;">
+                        <option value="university-guest">University Guest / Invitee</option>
+                        <option value="faculty-guest">Faculty/Staff Guest & Family</option>
+                        <option value="student-parent">Parents / Guardians</option>
+                        <option value="external-student">Other Institute Student</option>
+                        <option value="private-guest">Permitted Private Guest</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="calc-occupancy">Occupancy:</label>
+                    <select id="calc-occupancy" style="width: 100%; padding: 8px; margin-top: 5px;">
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="calc-days">Number of Days:</label>
+                    <input type="number" id="calc-days" value="1" min="1" style="width: 100%; padding: 7px; margin-top: 5px;">
+                </div>
+            </div>
+            <button id="calc-tariff-btn" style="margin-top: 15px; background: #0056b3; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Calculate Rate</button>
+            <div id="calc-result" style="margin-top: 15px; font-size: 1.05rem;"></div>
+        </div>
+
+        <!-- Tariff Structure Table -->
+        <div class="tariff-table-container" style="margin-top: 40px; overflow-x: auto;">
+            <h3 style="margin-bottom: 15px;">Detailed Room Rates & Tariffs</h3>
+            <table class="tariff-table" style="width: 100%; border-collapse: collapse; margin-bottom: 25px;">
+                <thead>
+                    <tr style="background-color: #f4f4f4; text-align: left;">
+                        <th style="padding: 10px; border: 1px solid #ddd;">Sr. No.</th>
+                        <th style="padding: 10px; border: 1px solid #ddd;">Category</th>
+                        <th style="padding: 10px; border: 1px solid #ddd;">Single Occupancy (₹)</th>
+                        <th style="padding: 10px; border: 1px solid #ddd;">Double Occupancy (₹)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #e9ecef; font-weight: bold;"><td colspan="4" style="padding: 8px; border: 1px solid #ddd;">Standard Room</td></tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ddd;">1</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">University Guests / Invitees</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">1,500</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">2,000</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ddd;">2</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">Faculty and Staff’s guest / family members</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">1,000</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">1,500</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ddd;">3</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">Parents / Guardians of the Students</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">1,000</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">1,500</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ddd;">4</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">Students from another institutes</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">1,000</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">1,500</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ddd;">5</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">Permitted Private Guests</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">1,500</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">2,000</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ddd;">6</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">Drivers</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;" colspan="2">500</td>
+                    </tr>
+                    <tr style="background-color: #e9ecef; font-weight: bold;"><td colspan="4" style="padding: 8px; border: 1px solid #ddd;">VIP Suite</td></tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ddd;">7</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">University Guests / Invitees</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">3,000</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">4,000</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ddd;">8</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">Faculty and Staff’s guest / family members</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">2,000</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">3,000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Interactive Tariff Calculator Widget -->
+<div class="calculator-box" style="background: #f8f9fa; border: 1px solid #cce5ff; padding: 25px; border-radius: 8px; margin-top: 30px;">
+    <h3 style="margin-bottom: 15px; color: #1a365d;">💡 Quick Tariff Estimator</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; align-items: center;">
+        <div>
+            <label for="calc-room-type">Room Type:</label>
+            <select id="calc-room-type" style="width: 100%; padding: 8px; margin-top: 5px;">
+                <option value="standard">Standard Room</option>
+                <option value="vip">VIP Suite</option>
+            </select>
+        </div>
+        <div>
+            <label for="calc-category">Guest Category:</label>
+            <select id="calc-category" style="width: 100%; padding: 8px; margin-top: 5px;">
+                <option value="university-guest">University Guest / Invitee</option>
+                <option value="faculty-guest">Faculty/Staff Guest & Family</option>
+                <option value="student-parent">Parents / Guardians</option>
+                <option value="external-student">Other Institute Student</option>
+                <option value="private-guest">Permitted Private Guest</option>
+            </select>
+        </div>
+        <div>
+            <label for="calc-occupancy">Occupancy:</label>
+            <select id="calc-occupancy" style="width: 100%; padding: 8px; margin-top: 5px;">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+            </select>
+        </div>
+        <div>
+            <label for="calc-days">Number of Days:</label>
+            <input type="number" id="calc-days" value="1" min="1" style="width: 100%; padding: 7px; margin-top: 5px;">
+        </div>
+    </div>
+    <button id="calc-tariff-btn" style="margin-top: 15px; background: #0056b3; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Calculate Rate</button>
+    <div id="calc-result" style="margin-top: 15px; font-size: 1.05rem;"></div>
+</div>
+
+            <h3 style="margin-bottom: 15px;">Other Areas (For SAU Faculty and Staff Members Only)</h3>
+            <ul style="line-height: 1.8; margin-bottom: 20px;">
+                <li><strong>a) Banquet Hall (GF):</strong> ₹1,000/- per day for eight hours</li>
+                <li><strong>b) Party Hall (FF):</strong> ₹500/- per day for eight hours</li>
+                <li><strong>c) Rooms for Meeting:</strong> ₹500/- per day for Half Day</li>
+            </ul>
+
+            <h3 style="margin-bottom: 15px;">Additional Guidelines & Special Terms</h3>
+            <ol style="line-height: 1.8;">
+                <li>SAU officials availing the facility due to official work will be allowed with no charges on the recommendation of Head of the Department.</li>
+                <li>Newly recruited staff can stay in the Guest House:
+                    <ul>
+                        <li>For first ten days @ ₹500/- per day</li>
+                        <li>Thereafter, @ ₹1,000/- per day or HRA whichever is lower for a maximum period of two weeks after first ten days, if allotment of house is pending.</li>
+                    </ul>
+                </li>
+                <li>Get-together of University faculty members/staff can be hosted with one-month prior notice and signed from the concerned head of the Department. For such functions/parties (where payment is made out of official funds or contributed collectively/personally), charges must be paid 7 days in advance.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>South Asian University</h3>
+                <p>An international university established by the member states of SAARC.</p>
+                <p>Maidan Garhi, New Delhi - 110068, India</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">About Us</a>
+                <a href="rooms.html">Rooms & Tariffs</a>
+                <a href="services.html">Services</a>
+                <a href="rules.html">Rules & Regulations</a>
+                <a href="contacts.html">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Desk</h3>
+                <p>Email: guesthouse@sau.int</p>
+                <p>Phone: +91 (11) 35656823</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 South Asian University. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
