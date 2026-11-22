@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guest House Booking - South Asian University</title>
+    <title>About Us | Campus Guest House - South Asian University</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Top Institutional Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span>📍 Rajpur Road, Maidan Garhi, New Delhi - 110068</span>
+            <span>✉️ guesthouse@sau.int | ☎️ +91 (11) 35656823</span>
+        </div>
+    </div>
 
     <!-- Header / Navbar -->
     <header class="navbar">
@@ -14,140 +22,99 @@
             <div class="logo-box">SAU</div>
             <div>
                 <h1 class="site-title">South Asian University</h1>
-                <p class="site-subtitle">Campus Guest House Accommodation</p>
+                <p class="site-subtitle">Campus Guest House &amp; Accommodation Portal</p>
             </div>
         </div>
         <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#rooms">Rooms</a>
-            <a href="#amenities">Amenities</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" class="active">About Us</a>
+            <a href="rooms.html">Rooms &amp; Tariffs</a>
+            <a href="services.html">Services</a>
+            <a href="rules.html">Rules &amp; Regulations</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="booking.html">Book Now</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h2>Welcome to SAU Campus Guest House</h2>
-        <p>Comfortable, affordable, and serene accommodation for university guests, visitors, faculty, and official delegates at Maidan Garhi Campus, New Delhi.</p>
-        <a href="#booking" class="btn">Request Booking</a>
-    </section>
-
-    <!-- Room Categories -->
-    <section id="rooms" class="section">
-        <h2 class="section-title">Room Options</h2>
-        <div class="card-grid">
-            
-            <div class="card">
-                <img src="https://images.com" alt="Standard Single Room">
-                <div class="card-body">
-                    <h3>Standard Single Room</h3>
-                    <p class="price">₹1,500 / night</p>
-                    <p>Single bed with attached bathroom, study desk, AC, and high-speed Wi-Fi access.</p>
-                </div>
+    <!-- Page Hero Banner -->
+    <section id="home" class="hero" style="padding: 60px 20px; text-align: center;">
+        <div class="hero-content">
+            <h2>Welcome to SAU Guest House</h2>
+            <p>Comfortable and convenient accommodation supporting South Asian University’s commitment to academic hospitality and cross-border collaboration.</p>
+            <div class="hero-buttons" style="margin-top: 20px;">
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+                <a href="rooms.html" class="btn btn-secondary">Rooms &amp; Tariffs</a>
             </div>
-
-            <div class="card">
-                <img src="https://images.com" alt="Deluxe Double Room">
-                <div class="card-body">
-                    <h3>Deluxe Double Room</h3>
-                    <p class="price">₹2,500 / night</p>
-                    <p>Spacious double room equipped with modern amenities, tea/coffee maker, and TV.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://images.com" alt="Executive VIP Suite">
-                <div class="card-body">
-                    <h3>Executive VIP Suite</h3>
-                    <p class="price">₹4,000 / night</p>
-                    <p>Premium suite featuring a separate sitting room, mini fridge, and balcony view.</p>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <!-- Amenities Section -->
-    <section id="amenities" class="section gray-bg">
-        <h2 class="section-title">Campus Facilities & Amenities</h2>
-        <div class="amenities-grid">
-            <div class="amenity-item">✔ 24/7 High-Speed Wi-Fi</div>
-            <div class="amenity-item">✔ Air Conditioned Rooms</div>
-            <div class="amenity-item">✔ In-house Dining / Mess</div>
-            <div class="amenity-item">✔ 24-Hour Security & CCTV</div>
-            <div class="amenity-item">✔ Daily Housekeeping</div>
-            <div class="amenity-item">✔ Campus Parking Space</div>
+
+    <!-- About Guest House Section -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Guesthouse at South Asian University</h2>
+            <p class="section-desc">Academic hospitality in a tranquil, functional campus setting.</p>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto; background: #f8f9fa; border: 1px solid #e2e8f0; border-radius: 8px; padding: 24px; line-height: 1.8;">
+            <p style="margin-bottom: 14px;">
+                Welcome to the Guesthouse at South Asian University (SAU). The Guesthouse is designed to offer comfortable and convenient accommodation for the university’s official guests, including visiting faculty, external examiners, dignitaries, and participants of academic events such as conferences, seminars, and workshops.
+            </p>
+            <p style="margin: 0;">
+                Strategically located and thoughtfully maintained, the guesthouse supports the university’s commitment to academic hospitality and cross-border collaboration. It provides a tranquil and functional environment that enables guests to engage in the university’s academic and cultural life with ease.
+            </p>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="section">
-        <h2 class="section-title">SAU Campus Gallery</h2>
-        <div class="gallery-grid">
-            <img src="https://images.com" alt="Campus Building">
-            <img src="https://images.com" alt="University Library">
-            <img src="https://images.com" alt="Campus Grounds">
-            <img src="https://images.com" alt="Conference Room">
+    <!-- FAQ / Guidelines Section -->
+    <section id="faq" class="section gray-bg">
+        <div class="section-header">
+            <h2 class="section-title">Booking Guidelines &amp; FAQs</h2>
+            <p class="section-desc">Important information regarding check-in policies and guest eligibility.</p>
         </div>
-    </section>
 
-    <!-- Booking Form Section -->
-    <section id="booking" class="section gray-bg">
-        <h2 class="section-title">Booking Enquiry Form</h2>
-        <form class="booking-form" action="#" method="post">
-            <div class="form-group">
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
-            </div>
-
-            <div class="form-group">
-                <label for="roomtype">Room Type</label>
-                <select id="roomtype" name="roomtype">
-                    <option value="single">Standard Single Room</option>
-                    <option value="deluxe">Deluxe Double Room</option>
-                    <option value="suite">Executive VIP Suite</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="checkin">Check-in Date</label>
-                <input type="date" id="checkin" name="checkin" required>
-            </div>
-
-            <div class="form-group">
-                <label for="checkout">Check-out Date</label>
-                <input type="date" id="checkout" name="checkout" required>
-            </div>
-
-            <div class="form-group full-width">
-                <label for="purpose">Purpose of Visit</label>
-                <textarea id="purpose" name="purpose" rows="3" placeholder="e.g., Official University Visit, Conference, Guest Faculty"></textarea>
-            </div>
-
-            <div class="form-group full-width">
-                <button type="submit" class="btn btn-submit">Submit Booking Request</button>
-            </div>
-        </form>
+        <div class="faq-container" style="max-width: 900px; margin: 0 auto;">
+            <details class="faq-item" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                <summary style="font-weight: 600; cursor: pointer;">Who is eligible to book accommodation at the SAU Guest House?</summary>
+                <p style="margin-top: 10px; line-height: 1.6;">Official university guests, visiting faculty, external examiners, dignitaries, participants of conferences, seminars, and workshops, and permitted guests are eligible, subject to approval and room availability.</p>
+            </details>
+            <details class="faq-item" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-bottom: 12px;">
+                <summary style="font-weight: 600; cursor: pointer;">What are the standard check-in and check-out timings?</summary>
+                <p style="margin-top: 10px; line-height: 1.6;">Standard check-in time is 12:00 PM (Noon) and check-out time is 11:00 AM. Early check-ins or late extensions must be coordinated directly with the Guest House desk.</p>
+            </details>
+            <details class="faq-item" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px;">
+                <summary style="font-weight: 600; cursor: pointer;">How is the payment processed for confirmed bookings?</summary>
+                <p style="margin-top: 10px; line-height: 1.6;">Once your booking enquiry is reviewed and approved by the administration, payment instructions or bank details are shared to finalize your reservation.</p>
+            </details>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
-        <p><strong>South Asian University</strong></p>
-        <p>Rajpur Road, Maidan Garhi, New Delhi - 110068, India</p>
-        <p>Email: guesthouse@sau.int | Phone: +91 11 2086 2597</p>
-        <p class="copyright">&copy; South Asian University. All rights reserved.</p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>South Asian University</h3>
+                <p>An international university established by the member states of SAARC.</p>
+                <p>Rajpur Road, Maidan Garhi, New Delhi - 110068, India</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">About Us</a>
+                <a href="rooms.html">Rooms &amp; Tariffs</a>
+                <a href="services.html">Services</a>
+                <a href="rules.html">Rules &amp; Regulations</a>
+                <a href="contacts.html">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Desk</h3>
+                <p>Email: guesthouse@sau.int</p>
+                <p>Phone: +91 (11) 35656823</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 South Asian University. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
