@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms &amp; Tariffs | Campus Guest House - South Asian University</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <!-- Top Institutional Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span>📍 Rajpur Road, Maidan Garhi, New Delhi - 110068</span>
+            <span>✉️ guesthouse@sau.int | ☎️ +91 (11) 35656823</span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-box">SAU</div>
+            <div>
+                <h1 class="site-title">South Asian University</h1>
+                <p class="site-subtitle">Campus Guest House &amp; Accommodation Portal</p>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html">About Us</a>
+            <a href="rooms.html" class="active">Rooms &amp; Tariffs</a>
+            <a href="services.html">Services</a>
+            <a href="rules.html">Rules &amp; Regulations</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="booking.html">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="hero" style="padding: 60px 20px; text-align: center;">
+        <div class="hero-content">
+            <h2>Accommodation Options &amp; Room Tariffs</h2>
+            <p>Explore our room categories, pricing structures, and special reservation guidelines.</p>
+        </div>
+    </section>
+
+    <!-- Room Categories Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Our Accommodation Categories</h2>
+            <p class="section-desc">Accommodation charges exclude breakfast, lunch, and dinner, which are available separately on a chargeable basis at the cafeteria.</p>
+        </div>
+
+        <!-- Filter Toolbar -->
+        <div class="rm-toolbar">
+            <div class="rm-chips" id="rm-chips" role="group" aria-label="Filter accommodation by category">
+                <button type="button" class="rm-chip is-on" data-cat="All" aria-pressed="true">All</button>
+                <button type="button" class="rm-chip" data-cat="Standard Room" aria-pressed="false">Standard Room</button>
+                <button type="button" class="rm-chip" data-cat="VIP Suite" aria-pressed="false">VIP Suite</button>
+                <button type="button" class="rm-chip" data-cat="Halls &amp; Meeting Rooms" aria-pressed="false">Halls &amp; Meeting Rooms</button>
+            </div>
+            <p class="rm-count" id="rm-count" aria-live="polite"></p>
+        </div>
+
+        <!-- Overview Cards -->
+        <div class="rm-grid" id="rm-grid">
+            <article class="rm-card" data-cat="Standard Room" data-calc-type="std">
+                <div class="rm-icon" aria-hidden="true">🛏️</div>
+                <span class="rm-badge">₹1,000 – ₹2,000 / day</span>
+                <h3>Standard Room</h3>
+                <p>Single &amp; Double occupancy rates vary by guest profile (University Guests, Staff Family, Parents, External Students, Private Guests, Drivers).</p>
+                <div class="rm-card-footer">
+                    <span class="rm-tag">Standard Room</span>
+                    <button type="button" class="rm-select-btn" data-jump-calc="std">Estimate Rent</button>
+                </div>
+            </article>
+
+            <article class="rm-card" data-cat="VIP Suite" data-calc-type="vip">
+                <div class="rm-icon" aria-hidden="true">👑</div>
+                <span class="rm-badge rm-badge-vip">₹2,000 – ₹4,000 / day</span>
+                <h3>VIP Suite</h3>
+                <p>Spacious suite accommodation reserved for University Guests / Invitees and Faculty / Staff Guests &amp; Family Members.</p>
+                <div class="rm-card-footer">
+                    <span class="rm-tag">VIP Suite</span>
+                    <button type="button" class="rm-select-btn" data-jump-calc="vip">Estimate Rent</button>
+                </div>
+            </article>
+
+            <article class="rm-card" data-cat="Halls &amp; Meeting Rooms">
+                <div class="rm-icon" aria-hidden="true">🏛️</div>
+                <span class="rm-badge rm-badge-hall">₹500 – ₹1,000 / day</span>
+                <h3>Halls &amp; Meeting Rooms</h3>
+                <p>Exclusive facility bookings for SAU Faculty and Staff across the Banquet Hall, Party Hall, and Meeting Rooms.</p>
+                <div class="rm-card-footer">
+                    <span class="rm-tag">Halls &amp; Meeting Rooms</span>
+                    <a href="booking.html" class="rm-select-btn" style="text-decoration:none;">Request Hall</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Tariff Structure Table -->
+        <div class="tariff-panel" id="tariff-panel">
+            <div class="tariff-panel-head">
+                <div>
+                    <h3 style="margin-bottom: 6px;">Room Rates &amp; Facility Tariff</h3>
+                    <p style="font-size: 0.9rem; color: var(--ink-muted); line-height: 1.6;">
+                        Accommodation charges exclude meals (breakfast, lunch, and dinner are chargeable separately at the cafeteria).
+                    </p>
+                </div>
+                <span class="rm-count" id="tariff-count" aria-live="polite"></span>
+            </div>
+
+            <div class="tariff-table-wrap">
+                <table class="tariff-table" id="tariff-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Sr. No.</th>
+                            <th rowspan="2">Category</th>
+                            <th colspan="2" style="text-align: center;">Room Rent (per room / slot per day)</th>
+                        </tr>
+                        <tr>
+                            <th>Single Occupancy / Slot</th>
+                            <th>Double Occupancy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tariff-group-row" data-group="Standard Room">
+                            <td colspan="4">Standard Room</td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="Standard Room" data-calc-room="std" data-calc-idx="0">
+                            <td>1</td>
+                            <td>University Guests / Invitees</td>
+                            <td><span class="rate-pill">₹1,500</span></td>
+                            <td><span class="rate-pill">₹2,000</span></td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="Standard Room" data-calc-room="std" data-calc-idx="1">
+                            <td>2</td>
+                            <td>Faculty and Staff’s guest / family members</td>
+                            <td><span class="rate-pill">₹1,000</span></td>
+                            <td><span class="rate-pill">₹1,500</span></td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="Standard Room" data-calc-room="std" data-calc-idx="2">
+                            <td>3</td>
+                            <td>Parents / Guardians of the Students</td>
+                            <td><span class="rate-pill">₹1,000</span></td>
+                            <td><span class="rate-pill">₹1,500</span></td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="Standard Room" data-calc-room="std" data-calc-idx="3">
+                            <td>4</td>
+                            <td>Students from another institutes</td>
+                            <td><span class="rate-pill">₹1,000</span></td>
+                            <td><span class="rate-pill">₹1,500</span></td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="Standard Room" data-calc-room="std" data-calc-idx="4">
+                            <td>5</td>
+                            <td>Permitted Private Guests</td>
+                            <td><span class="rate-pill">₹1,500</span></td>
+                            <td><span class="rate-pill">₹2,000</span></td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="Standard Room" data-calc-room="std" data-calc-idx="5">
+                            <td>6</td>
+                            <td>Drivers (on sharing basis)</td>
+                            <td><span class="rate-pill">₹500</span></td>
+                            <td><span class="rate-na">—</span></td>
+                        </tr>
+
+                        <tr class="tariff-group-row" data-group="VIP Suite">
+                            <td colspan="4">VIP Suite</td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="VIP Suite" data-calc-room="vip" data-calc-idx="0">
+                            <td>7</td>
+                            <td>University Guests / Invitees</td>
+                            <td><span class="rate-pill">₹3,000</span></td>
+                            <td><span class="rate-pill">₹4,000</span></td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="VIP Suite" data-calc-room="vip" data-calc-idx="1">
+                            <td>8</td>
+                            <td>Faculty and Staff’s guest / family members</td>
+                            <td><span class="rate-pill">₹2,000</span></td>
+                            <td><span class="rate-pill">₹3,000</span></td>
+                        </tr>
+
+                        <tr class="tariff-group-row" data-group="Halls &amp; Meeting Rooms">
+                            <td colspan="4">Other Areas (For SAU Faculty and Staff members only)</td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="Halls &amp; Meeting Rooms">
+                            <td>a</td>
+                            <td>Banquet Hall (Ground Floor) – per day for eight hours</td>
+                            <td><span class="rate-pill">₹1,000</span></td>
+                            <td><span class="rate-na">—</span></td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="Halls &amp; Meeting Rooms">
+                            <td>b</td>
+                            <td>Party Hall (First Floor) – per day for eight hours</td>
+                            <td><span class="rate-pill">₹500</span></td>
+                            <td><span class="rate-na">—</span></td>
+                        </tr>
+                        <tr class="tariff-rate-row" data-group="Halls &amp; Meeting Rooms">
+                            <td>c</td>
+                            <td>Rooms for Meeting – per day for half day</td>
+                            <td><span class="rate-pill">₹500</span></td>
+                            <td><span class="rate-na">—</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Interactive Tariff Calculator -->
+        <div class="calculator-box" id="tariff-calculator">
+            <h3 style="margin-bottom: 6px;">Estimate Your Room Rent</h3>
+            <p style="font-size: 0.9rem; color: var(--ink-muted); margin-bottom: 18px;">
+                Updates automatically as you adjust room type, guest category, occupancy, or stay duration.
+            </p>
+
+            <div class="calc-grid">
+                <div class="calc-field">
+                    <label>Room type
+                        <select id="calc-room">
+                            <option value="std">Standard Room</option>
+                            <option value="vip">VIP Suite</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="calc-field">
+                    <label>Guest category
+                        <select id="calc-cat"></select>
+                    </label>
+                </div>
+                <div class="calc-field">
+                    <label>Occupancy
+                        <select id="calc-occ">
+                            <option value="s">Single Occupancy</option>
+                            <option value="d">Double Occupancy</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="calc-field">
+                    <label>Number of days
+                        <input type="number" id="calc-days" min="1" max="365" value="1">
+                    </label>
+                </div>
+            </div>
+
+            <div class="calc-actions">
+                <button type="button" class="calc-btn" id="calc-tariff-btn">Calculate Rent</button>
+                <div class="calc-day-presets" role="group" aria-label="Quick stay duration presets">
+                    <button type="button" class="calc-preset-btn is-active" data-days="1">1 Day</button>
+                    <button type="button" class="calc-preset-btn" data-days="2">2 Days</button>
+                    <button type="button" class="calc-preset-btn" data-days="3">3 Days</button>
+                    <button type="button" class="calc-preset-btn" data-days="7">7 Days</button>
+                </div>
+            </div>
+
+            <p class="calc-result" id="calc-result" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>South Asian University</h3>
+                <p>An international university established by the member states of SAARC.</p>
+                <p>Rajpur Road, Maidan Garhi, New Delhi - 110068, India</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="../index.html">About Us</a>
+                <a href="rooms.html">Rooms &amp; Tariffs</a>
+                <a href="services.html">Services</a>
+                <a href="rules.html">Rules &amp; Regulations</a>
+                <a href="contacts.html">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Desk</h3>
+                <p>Email: guesthouse@sau.int</p>
+                <p>Phone: +91 (11) 35656823</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 South Asian University. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/rooms.js"></script>
+</body>
+</html>

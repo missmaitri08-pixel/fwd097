@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services &amp; Facilities | South Asian University Guest House</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <!-- Top Institutional Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span>📍 Rajpur Road, Maidan Garhi, New Delhi - 110068</span>
+            <span>✉️ guesthouse@sau.int | ☎️ +91 (11) 35656823</span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-box">SAU</div>
+            <div>
+                <h1 class="site-title">South Asian University</h1>
+                <p class="site-subtitle">Campus Guest House &amp; Accommodation Portal</p>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html">About Us</a>
+            <a href="rooms.html">Rooms &amp; Tariffs</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="rules.html">Rules &amp; Regulations</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="booking.html">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="hero" style="
+    padding: 60px 20px; text-align: center;
+    background: linear-gradient(rgba(14, 33, 61, 0.55), rgba(14, 33, 61, 0.75)),
+    url('../assets/GuestHouse.jpg') center center / cover no-repeat;
+"> 
+        <div class="hero-content">
+            <h2>Guest House Services &amp; Amenities</h2>
+            <p>Comprehensive hospitality and academic support services designed for a comfortable stay at South Asian University.</p>
+        </div>
+    </section>
+
+
+    <!-- Services Grid Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Hospitality &amp; Campus Services</h2>
+            <p class="section-desc">Tailored amenities ensuring convenience, comfort, and productivity for university visitors.</p>
+        </div>
+
+        <div class="svc-toolbar">
+            <div class="svc-chips" id="svc-chips" role="group" aria-label="Filter by category">
+                <button type="button" class="svc-chip is-on" data-cat="All" aria-pressed="true">All</button>
+                <button type="button" class="svc-chip" data-cat="Connectivity" aria-pressed="false">Connectivity</button>
+                <button type="button" class="svc-chip" data-cat="Wellness" aria-pressed="false">Wellness</button>
+                <button type="button" class="svc-chip" data-cat="Dining" aria-pressed="false">Dining</button>
+                <button type="button" class="svc-chip" data-cat="Comfort" aria-pressed="false">Comfort</button>
+                <button type="button" class="svc-chip" data-cat="Guest Care" aria-pressed="false">Guest Care</button>
+                <button type="button" class="svc-chip" data-cat="Safety" aria-pressed="false">Safety</button>
+            </div>
+            <p class="svc-count" id="svc-count" aria-live="polite"></p>
+        </div>
+
+        <div class="svc-grid" id="svc-grid">
+            <article class="svc-card" data-cat="Connectivity">
+                <div class="svc-icon" aria-hidden="true">📶</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>WI-FI</h3>
+                <p>Complimentary high-speed Wi-Fi access available 24/7 across guest rooms and common areas for secure browsing, streaming, and communication.</p>
+                <span class="svc-tag">Connectivity</span>
+            </article>
+            <article class="svc-card" data-cat="Connectivity">
+                <div class="svc-icon" aria-hidden="true">🅿️</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>On-Site Parking</h3>
+                <p>Secure, well-maintained, and easily accessible on-site parking within the guest house premises, free of charge on a first-come, first-served basis for registered guests.</p>
+                <span class="svc-tag">Connectivity</span>
+            </article>
+            <article class="svc-card" data-cat="Wellness">
+                <div class="svc-icon" aria-hidden="true">🏊</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>Swimming Pool</h3>
+                <p>Well-maintained swimming pool available exclusively for guests during designated daily hours, complete with poolside seating and towels.</p>
+                <span class="svc-tag">Wellness</span>
+            </article>
+            <article class="svc-card" data-cat="Wellness">
+                <div class="svc-icon" aria-hidden="true">🏋️</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>Gymnasium</h3>
+                <p>Modern fitness facility open daily for guests with treadmills, exercise bikes, free weights, and strength-training machines.</p>
+                <span class="svc-tag">Wellness</span>
+            </article>
+            <article class="svc-card" data-cat="Wellness">
+                <div class="svc-icon" aria-hidden="true">🧘</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>Yoga &amp; Meditation Center</h3>
+                <p>Calm and serene space for self-guided or group morning yoga and meditation sessions, with mats and basic props provided on-site.</p>
+                <span class="svc-tag">Wellness</span>
+            </article>
+            <article class="svc-card" data-cat="Dining">
+                <div class="svc-icon" aria-hidden="true">🍽️</div>
+                <span class="svc-badge svc-advance">Advance order</span>
+                <h3>Cafeteria</h3>
+                <p>Freshly prepared daily meals, small gatherings, and event catering with vegetarian and non-vegetarian options, plus customized menus on request.</p>
+                <span class="svc-tag">Dining</span>
+            </article>
+            <article class="svc-card" data-cat="Comfort">
+                <div class="svc-icon" aria-hidden="true">🛗</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>Lift</h3>
+                <p>Spacious, regularly maintained modern elevators across all floors for convenient and accessible vertical movement, including for guests with mobility needs.</p>
+                <span class="svc-tag">Comfort</span>
+            </article>
+            <article class="svc-card" data-cat="Comfort">
+                <div class="svc-icon" aria-hidden="true">🚿</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>Hot water</h3>
+                <p>Continuous hot water supply across all bathrooms for a warm shower or bath anytime during your stay.</p>
+                <span class="svc-tag">Comfort</span>
+            </article>
+            <article class="svc-card" data-cat="Comfort">
+                <div class="svc-icon" aria-hidden="true">🛁</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>Attached bathrooms</h3>
+                <p>Clean, well-maintained attached bathrooms in every guest room with modern fittings and essential toiletries.</p>
+                <span class="svc-tag">Comfort</span>
+            </article>
+            <article class="svc-card" data-cat="Comfort">
+                <div class="svc-icon" aria-hidden="true">❄️</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>Air-conditioned</h3>
+                <p>Modern air conditioning in guest rooms to keep your stay cool and comfortable in any weather.</p>
+                <span class="svc-tag">Comfort</span>
+            </article>
+            <article class="svc-card" data-cat="Guest Care">
+                <div class="svc-icon" aria-hidden="true">🛎️</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>Front Desk</h3>
+                <p>Staffed round-the-clock (24/7) to assist with late check-ins, local information, and on-stay support at any hour.</p>
+                <span class="svc-tag">Guest Care</span>
+            </article>
+            <article class="svc-card" data-cat="Guest Care">
+                <div class="svc-icon" aria-hidden="true">🧹</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>House Keeping Services</h3>
+                <p>Round-the-clock room cleaning and upkeep to keep rooms hygienic and comfortable whenever needed.</p>
+                <span class="svc-tag">Guest Care</span>
+            </article>
+            <article class="svc-card" data-cat="Guest Care">
+                <div class="svc-icon" aria-hidden="true">🧺</div>
+                <span class="svc-badge svc-chargeable">Chargeable</span>
+                <h3>Laundry</h3>
+                <p>Washing, drying, and ironing services available at nominal charges on request, with same-day service for morning requests.</p>
+                <span class="svc-tag">Guest Care</span>
+            </article>
+            <article class="svc-card" data-cat="Safety">
+                <div class="svc-icon" aria-hidden="true">📹</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>CCTV</h3>
+                <p>24/7 CCTV surveillance covering entrances, corridors, and shared common areas for guest safety while respecting privacy in private rooms.</p>
+                <span class="svc-tag">Safety</span>
+            </article>
+            <article class="svc-card" data-cat="Safety">
+                <div class="svc-icon" aria-hidden="true">🚨</div>
+                <span class="svc-badge svc-included">Included</span>
+                <h3>Fire Safety with Smoke Alarm System</h3>
+                <p>Smoke alarms and fire safety systems installed across rooms and common areas, regularly tested and maintained for early detection and prompt response.</p>
+                <span class="svc-tag">Safety</span>
+            </article>
+        </div>
+        <p class="svc-empty" id="svc-empty" hidden>No services in this category.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>South Asian University</h3>
+                <p>An international university established by the member states of SAARC.</p>
+                <p>Rajpur Road, Maidan Garhi, New Delhi - 110068, India</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="../index.html">About Us</a>
+                <a href="rooms.html">Rooms &amp; Tariffs</a>
+                <a href="services.html">Services</a>
+                <a href="rules.html">Rules &amp; Regulations</a>
+                <a href="contacts.html">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Desk</h3>
+                <p>Email: guesthouse@sau.int</p>
+                <p>Phone: +91 (11) 35656823</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 South Asian University. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/services.js"></script>
+</body>
+</html>
