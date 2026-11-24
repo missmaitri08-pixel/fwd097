@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Accommodation | Campus Guest House - South Asian University</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page-booking">
+
+    <!-- Top Institutional Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span>📍 Rajpur Road, Maidan Garhi, New Delhi - 110068</span>
+            <span>✉️ guesthouse@sau.int | ☎️ +91 (11) 35656823</span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-box">SAU</div>
+            <div>
+                <h1 class="site-title">South Asian University</h1>
+                <p class="site-subtitle">Campus Guest House &amp; Accommodation Portal</p>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html">About Us</a>
+            <a href="rooms.html">Rooms &amp; Tariffs</a>
+            <a href="services.html">Services</a>
+            <a href="rules.html">Rules &amp; Regulations</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="booking.html" class="active">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- Page Hero Banner -->
+     <section class="hero" style="
+    padding: 60px 20px; text-align: center;
+    background: linear-gradient(rgba(14, 33, 61, 0.55), rgba(14, 33, 61, 0.75)),
+    url('../assets/GuestHouse.jpg') center center / cover no-repeat;
+">
+        <div class="hero-content">
+            <h2>Requisition for Guest House Accommodation</h2>
+            <p>Please fill out all mandatory fields accurately. Guests unable to upload a valid government ID must present the original physical ID at check-in.</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <div class="container">
+            <form action="#" method="POST" enctype="multipart/form-data" class="booking-form" id="booking_form">
+                <div class="folio-tag">Folio · Reservation Dossier</div>
+
+                <!-- Accommodation & Guest Details -->
+                <fieldset>
+                    <legend>Accommodation &amp; Guest Details</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="room_category">Accommodation Category*</label>
+                            <select id="room_category" name="room_category" required>
+                                <option value="">----Select Room Category----</option>
+                                <option value="Standard">Standard Room (₹1,000 – ₹2,000 / day)</option>
+                                <option value="VIP">VIP Suite (₹2,000 – ₹4,000 / day)</option>
+                                <option value="Other">Banquet / Party / Meeting Area (₹500 – ₹1,000 / day)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="occupancy_type">Occupancy Type*</label>
+                            <select id="occupancy_type" name="occupancy_type" required>
+                                <option value="">----Select Occupancy Type----</option>
+                                <option value="Single">Single</option>
+                                <option value="Double">Double</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row three-col">
+                        <div class="form-group">
+                            <label for="salutation">Salutation*</label>
+                            <select id="salutation" name="salutation" required>
+                                <option value="">Select a title</option>
+                                <option value="Mr">Mr.</option>
+                                <option value="Mrs">Mrs.</option>
+                                <option value="Ms">Ms.</option>
+                                <option value="Miss">Miss</option>
+                                <option value="Dr">Dr.</option>
+                                <option value="Prof">Prof.</option>
+                                <option value="Mx">Mx.</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="first_name">First Name of the Guest*</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">Last Name of the Guest*</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="gender">Gender*</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">----Select Gender----</option>
+                                <option value="Female">Female</option>
+                                <option value="Male">Male</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guest_category">Guest Category*</label>
+                            <select id="guest_category" name="guest_category" required>
+                                <option value="">----Select Guest Category----</option>
+                                <option value="University Guests">University Guests / Invitees</option>
+                                <option value="Faculty Family">Faculty and Staff’s guest / family members</option>
+                                <option value="Parents">Parents / Guardians of the Students</option>
+                                <option value="Students">Students from another institutes</option>
+                                <option value="Private Guests">Permitted Private Guests</option>
+                                <option value="Drivers">Drivers</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Identification & Affiliation -->
+                <fieldset>
+                    <legend>Identification &amp; Affiliation</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="id_type">Guest’s ID Type*</label>
+                            <select id="id_type" name="id_type" required>
+                                <option value="">----Select Guest’s ID Type----</option>
+                                <option value="Any Govt. ID">Any Govt. ID</option>
+                                <option value="Aadhaar">Aadhaar</option>
+                                <option value="Driving License">Driving License</option>
+                                <option value="Passport">Passport</option>
+                                <option value="Institute ID">Institute ID</option>
+                                <option value="SAU Staff ID Card">SAU Staff ID Card</option>
+                                <option value="SAU Student ID Card">SAU Student ID Card</option>
+                                <option value="Voter ID">Voter ID</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guest_id_file">Upload Guest ID (.jpg, .png, .pdf)*</label>
+                            <input type="file" id="guest_id_file" name="guest_id_file" accept=".jpg, .png, .pdf" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="org_name">Guest’s Organization Name*</label>
+                            <input type="text" id="org_name" name="org_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="designation">Guest’s Current Designation*</label>
+                            <input type="text" id="designation" name="designation" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Stay Duration & Purpose -->
+                <fieldset>
+                    <legend>Stay Duration &amp; Purpose</legend>
+                    <div class="form-row three-col">
+                        <div class="form-group">
+                            <label for="num_rooms">No. of Rooms*</label>
+                            <input type="number" id="num_rooms" name="num_rooms" min="1" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="arrival">Arrival Date &amp; Time*</label>
+                            <input type="datetime-local" id="arrival" name="arrival" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="departure">Departure Date &amp; Time*</label>
+                            <input type="datetime-local" id="departure" name="departure" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="purpose">Purpose of Visit/Stay*</label>
+                        <textarea id="purpose" name="purpose" rows="3" required></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- SAU Recommender Details -->
+                <fieldset>
+                    <legend>SAU Recommendation / Department</legend>
+                    <div class="form-row three-col">
+                        <div class="form-group">
+                            <label for="booking_through">Booking Through*</label>
+                            <select id="booking_through" name="booking_through" required>
+                                <option value="SAU Recommender">SAU Recommender</option>
+                                <option value="Direct">Direct</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="dept_group">
+                            <label for="department">Department*</label>
+                            <select id="department" name="department" required>
+                                <option value="">----Select Department----</option>
+                                <option value="Accounts">Accounts</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Admission and Examination">Admission and Examination</option>
+                                <option value="Department of Climate Change">Department of Climate Change</option>
+                                <option value="Department of Computer Science and Engineering">Department of Computer Science and Engineering</option>
+                                <option value="Department of International Relations">Department of International Relations</option>
+                                <option value="Department of Mathematics">Department of Mathematics</option>
+                                <option value="Department of Sociology">Department of Sociology</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Environmental Climate">Environmental Climate</option>
+                                <option value="Establishment & Procurement">Establishment &amp; Procurement</option>
+                                <option value="Faculty of Art & Design">Faculty of Art &amp; Design</option>
+                                <option value="Faculty of Chemical Sciences">Faculty of Chemical Sciences</option>
+                                <option value="Faculty of Economics">Faculty of Economics</option>
+                                <option value="Faculty of Engineering & Technology">Faculty of Engineering &amp; Technology</option>
+                                <option value="Faculty of International Studies">Faculty of International Studies</option>
+                                <option value="Faculty of Legal Studies">Faculty of Legal Studies</option>
+                                <option value="Faculty of Life Science & Biotechnology">Faculty of Life Science &amp; Biotechnology</option>
+                                <option value="Faculty of Management">Faculty of Management</option>
+                                <option value="Faculty of Physical Sciences">Faculty of Physical Sciences</option>
+                                <option value="Information and Communications Technology">Information and Communications Technology</option>
+                                <option value="Library">Library</option>
+                                <option value="Media & Public Relation">Media &amp; Public Relation</option>
+                                <option value="Medical">Medical</option>
+                                <option value="President's Office">President's Office</option>
+                                <option value="Procurement">Procurement</option>
+                                <option value="Public Relations">Public Relations</option>
+                                <option value="REGISTRAR'S OFFICE">REGISTRAR'S OFFICE</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="emp_group">
+                            <label for="employee_name">Employee Name*</label>
+                            <select class="form-select" id="employee_name" name="employee_name" required>
+                                <option value="">----Select Employees----</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Centered Submit Button -->
+                <div class="form-submit">
+                    <button type="submit" class="submit-btn">Submit Booking Request</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>South Asian University</h3>
+                <p>An international university established by the member states of SAARC.</p>
+                <p>Rajpur Road, Maidan Garhi, New Delhi - 110068, India</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="../index.html">About Us</a>
+                <a href="rooms.html">Rooms &amp; Tariffs</a>
+                <a href="services.html">Services</a>
+                <a href="rules.html">Rules &amp; Regulations</a>
+                <a href="contacts.html">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Desk</h3>
+                <p>Email: guesthouse@sau.int</p>
+                <p>Phone: +91 (11) 35656823</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 South Asian University. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
